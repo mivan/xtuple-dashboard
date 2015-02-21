@@ -1,11 +1,8 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$value-color:              #FFF;
-$background-color:         #78A300;
-$background-error-color:   #EC663C;
-$background-passed-color:  #78A300;
-$background-started-color: #E7D100;
+$background-color:  #0ebfe9;
+$value-color:       #fff;
 
 $title-color:       rgba(255, 255, 255, 0.7);
 $label-color:       rgba(255, 255, 255, 0.7);
@@ -14,17 +11,10 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 // ----------------------------------------------------------------------------
 // Widget-list styles
 // ----------------------------------------------------------------------------
-.widget-travis{
+.widget-links-list {
 
   background-color: $background-color;
   vertical-align: top;
-
-  img {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    opacity: 0.05;
-  }
 
   .title {
     color: $title-color;
@@ -49,20 +39,14 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
 
   .label {
-    text-align: center;
-    display: block;
     color: $label-color;
-    font-size: 24px;
-    word-wrap: break-word;
   }
 
   .value {
-    text-align: center;
-    display: block;
+    float: right;
+    margin-left: 12px;
     font-weight: 600;
     color: $value-color;
-    font-size: 24px;
-    word-wrap: break-word;
   }
 
   .updated-at {
@@ -71,19 +55,6 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 
   .more-info {
     color: $moreinfo-color;
-  }
-
-  &.failed,
-  &.errored {
-    background-color: $background-error-color;
-  }
-
-  &.started {
-    background-color: $background-started-color;
-  }
-
-  &.passed {
-    background-color: $background-passed-color;
   }
 
 }

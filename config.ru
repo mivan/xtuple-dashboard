@@ -8,7 +8,8 @@ else
 end
 
 configure do
-  set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :auth_token, ENV.fetch('AUTH_TOKEN', SecureRandom.uuid)
+  set :protection, :except => :frame_options
 
   helpers do
     def protected!

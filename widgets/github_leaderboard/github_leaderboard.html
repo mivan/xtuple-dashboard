@@ -1,9 +1,8 @@
 <h1 class="title" data-bind="title"></h1>
 
-<img src="/assets/travis-mascot-600px.png" data-addclass-ok="item.state">
-
 <ol>
   <li data-foreach-item="items">
+    <span><img class="avatar" data-bind-src="item.avatar_url"></span>
     <span class="label" data-bind="item.label"></span>
     <span class="value" data-bind="item.value"></span>
   </li>
@@ -11,6 +10,7 @@
 
 <ul class="list-nostyle">
   <li data-foreach-item="items">
+    <span><img data-bind-src="item.avatar_url"></span>
     <span class="label" data-bind="item.label"></span>
     <span class="value" data-bind="item.value"></span>
   </li>
